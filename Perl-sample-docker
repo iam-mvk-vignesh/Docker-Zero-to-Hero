@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+
+#To match list of words with an expression
+my @array = ('abc','abbbbbbbb','zc','abcbcbcbc','ac','asccbbbbcbcccc');
+my $str;
+foreach $str(@array){
+
+    ( $str =~ /^(ab)/) ? (print "the word $str matches ","\n") : (print"$str didnt match","\n") ;
+}
+
+#To find the digits in array and finding their square root
+my @arr1=(10,20,30,40,50,'raju','ganesh');
+my @arr2= map{ $_* $_ } grep(/\d+/,@arr1);
+print "@arr2";
